@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="../../assets/css/sb-admin.css">
+}
+<div id="wrapper">
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li class="active">
+                <a ui-sref="admin.dashboard"><i class=" fa fa-fw fa-dashboard"></i> Dashboard</a>
+            </li>
+            <li>
+                <a ui-sref="admin.chart"><i class=" fa fa-fw fa-bar-chart-o"></i> Charts</a>
+            </li>
+            <li>
+                <a ng-click="createCollapse = !createCollapse"><i class="fa fa-fw fa-edit"></i> Create/Edit <i class="fa fa-fw fa-caret-down"></i></a>
+                <ul collapse="!createCollapse">
+                    <li>
+                        <a ui-sref="admin.movies.list">Movie</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+
+        <div ui-view class="container-fluid">
+
+        </div>
+    </div>
+</div>
+
+

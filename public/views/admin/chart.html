@@ -1,0 +1,29 @@
+<div ng-controller="ChartCtrl">
+
+    <d3-data src="orders/GetPopularMovies" data="line" columns="movie,amount"></d3-data>
+    <d3-data src="orders/GetOrdersPerDay" data="pie" columns="age,population"></d3-data>
+
+    <section id="pie-charts" class="well">
+        <h1>Orders Per Day</h1>
+        <div class="row">
+            <div d3-chart data="pie" class="col-sm-6" margin="{left: 30, right: 30, bottom: 30, top: 30}">
+                <d3-pie label="age" value="population" colors="category20"></d3-pie>
+            </div>
+        </div>
+    </section>
+
+    <section id="arc-charts" class="well">
+        <h1>Popular Movies</h1>
+        <div class="row">
+            <div d3-chart data="line" margin="{ top: 40, right: 60, bottom: 40, left: 60}">
+                <d3-axis data="line" name="movie" label="Movie" orientation="bottom"></d3-axis>
+                <d3-axis data="line" name="amount" label="Amount" orientation="left" ticks="5"></d3-axis>
+                <d3-bars data="line" x="movie" y="amount" yscale="amount"></d3-bars>
+            </div>
+        </div>
+    </section>
+
+    <d3-data src="orders/Test" data="line" columns="year, savings, total, optimal"></d3-data>
+
+
+</div>

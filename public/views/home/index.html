@@ -1,0 +1,112 @@
+<div id="wrap" ng-controller="ListCtrl">
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <form class="navbar-form navbar-left" name="filter" role="search" ng-submit="filterMovies(filter)">
+            <div class="form-group">
+                <input name="q" ng-model="filter.qry" type="text" class="form-control input-lg" placeholder="Search..." value="">
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-4">
+            <!-- left sec -->
+            <div class="left-sec">
+
+                <div class="left-cont">
+                    <h6><span class="glyphicon glyphicon-search"></span> Refine Search</h6>
+                    <form class="filter-sec" id="facets" ng-submit="filterMovies(filter)">
+                        <input ng-model="filter.qry" name="q" id="q" type="hidden" value="" />
+                        <section data-ng-init="findDirectors()" >
+                            <select ng-change="filterMovies(filter)" ng-model="filter.director" id="director" name="director" class="form-control" >
+                                <option value="">Director</option>
+                                <option data-ng-repeat="director in directors" value="{{director}}">{{director}}</option>
+                            </select>
+                        </section>
+
+                        <h5>Genres:</h5>
+                        <div class="input-control">
+                            <div class="picker">
+                                <input ng-change="filterMovies(filter)" ng-model="filter.genre.Drama" name="genres" class="checkbox" id="drama" type="checkbox" value="drama" />
+                                <label for="drama">Drama</label>
+                            </div>
+                            <div class="picker">
+                                <input ng-change="filterMovies(filter)" ng-model="filter.genre.Action" name="genres" class="checkbox" id="action" type="checkbox" value="action" />
+                                <label for="action">Action</label>
+                            </div>
+                            <div class="picker">
+                                <input ng-change="filterMovies(filter)" ng-model="filter.genre.Comedy" name="genres" class="checkbox" id="comedy" type="checkbox" value="comedy" />
+                                <label for="comedy">Comedy</label>
+                            </div>
+                            <div class="picker">
+                                <input ng-change="filterMovies(filter)" ng-model="filter.genre.Crime" name="genres" class="checkbox" id="crime" type="checkbox" value="crime" />
+                                <label for="crime">Crime</label>
+                            </div>
+                            <div class="picker">
+                                <input ng-change="filterMovies(filter)" ng-model="filter.genre.Science" name="genres" class="checkbox" id="science" type="checkbox" value="science" />
+                                <label for="science">Science</label>
+                            </div>
+                            <div class="picker">
+                                <input ng-change="filterMovies(filter)" ng-model="filter.genre.Animation" name="genres" class="checkbox" id="animation" type="checkbox" value="animation" />
+                                <label for="animation">Animation</label>
+                            </div>
+                        </div>
+                        <h5>Price:</h5>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <input ng-model="filter.minPrice" ng-change="filterMovies(filter)" name="minPrice" id="minPrice" type="text" class="form-control input-sm" placeholder="Low">
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <input ng-model="filter.maxPrice" ng-change="filterMovies(filter)" name="maxPrice" id="maxPrice" type="text" class="form-control input-sm" placeholder="High">
+                            </div>
+                        </div>
+
+                        <h5>Year:</h5>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <input ng-change="filterMovies(filter)" ng-model="filter.minYear" name="minYear" id="minYear" type="text" class="form-control input-sm" placeholder="1999">
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <input ng-model="filter.maxYear" ng-change="filterMovies(filter)" name="maxYear" id="maxYear" type="text" class="form-control input-sm" placeholder="2013">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-8">
+            <div class="right-sec">
+                <div class="top">
+                    <ul class="nav nav-tabs tooltip-demo">
+                        <li class="active">
+                            <a href="#">All Listings </a>
+                        </li>
+                        <li>
+                            <a href="#">Most Popular </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <section data-ng-init="findMovies()">
+
+                        <div data-ng-repeat="movie in movies" class='col-md-4 col-sm-6' ui-sref-active="active">
+                            <div class='thumbnail'>
+                                <img alt='300x200' ng-src="{{movie.picture}}" >
+                                <span class='label label-success'>{{movie.price}}$</span>
+                                <div class='caption'>
+                                    <h4 class='title'><a ui-sref="movies.detail({movieId:movie._id})">{{movie.name}}</a></h4>
+                                    <ul class='list-unstyled'>
+                                        <li>
+                                            <span><strong>Genre:</strong> {{movie.genre}} </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 style='text-align:center' data-ng-hide="!movies || movies.length">NO RESULTS.</h3>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

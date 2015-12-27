@@ -1,0 +1,121 @@
+[{
+  "name" : "Fight Club",
+  "director" : "David Finch",
+  "releaseDate" : "1999-12-16",
+  "genre" : "Drama",
+  "picture" : "http://i1372.photobucket.com/albums/ag340/themasterpost/Movie%20Posters/fight_club_zpsce1c50ee.jpg",
+  "trailer" : "http://youtu.be/J8FRBYOFu2w",
+  "price" : "20",
+  "lat" : "0",
+  "lng" : "0",
+  "actors" : [{
+	"name" : "Brad Pitt",
+	"picture" : "http://www.sratim.co.il/photos/actors/normal/5/395_20120728100000_568191683592.jpg"
+  },
+	{
+	  "name" : "Edward Norton",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Ed_Norton_Shankbone_Metropolitan_Opera_2009.jpg/200px-Ed_Norton_Shankbone_Metropolitan_Opera_2009.jpg"
+	}]
+},{
+  "name" : "Harry Potter And The Prisoner Of Azkaban",
+  "director" : "Chris Columbus",
+  "releaseDate" : "2004-11-6",
+  "genre" : "Drama",
+  "picture" : "http://i977.photobucket.com/albums/ae252/sandrixbella/harry-potter.jpg",
+  "trailer" : "http://i977.photobucket.com/albums/ae252/sandrixbella/harry-potter.jpg",
+  "price" : "30",
+  "lat" : "0",
+  "lng" : "0",
+  "actors" : [{
+	"name" : "Daniel Radcliffe",
+	"picture" : "http://i977.photobucket.com/albums/ae252/sandrixbella/harry-potter.jpg"
+  },
+	{
+	  "name" : "Rupert Grint",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Rupert_Grint_2012.jpg/440px-Rupert_Grint_2012.jpg"
+	},
+	{
+	  "name" : "Emma Watson",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Emma_Watson_2013.jpg/440px-Emma_Watson_2013.jpg"
+	}]
+},{
+  "name" : "Harry Potter And The Order Of The Pheonix",
+  "director" : "Chris Columbus",
+  "releaseDate" : "2010-2-22",
+  "genre" : "Drama",
+  "picture" : "http://i679.photobucket.com/albums/vv156/SariyeWolf/POTTER.jpg",
+  "trailer" : "http://i679.photobucket.com/albums/vv156/SariyeWolf/POTTER.jpg",
+  "price" : "40",
+  "lat" : "0",
+  "lng" : "0",
+  "actors" : [{
+	"name" : "Daniel Radcliffe",
+	"picture" : "http://i977.photobucket.com/albums/ae252/sandrixbella/harry-potter.jpg"
+  },
+	{
+	  "name" : "Rupert Grint",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Rupert_Grint_2012.jpg/440px-Rupert_Grint_2012.jpg"
+	},
+	{
+	  "name" : "Emma Watson",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Emma_Watson_2013.jpg/440px-Emma_Watson_2013.jpg"
+	}]
+},{
+  "name" : "Harry Potter The End Is Coming",
+  "director" : "Chris Columbus",
+  "releaseDate" : "2007-5-11",
+  "genre" : "Drama",
+  "picture" : "http://i50.photobucket.com/albums/f313/P0is0n0us/HarryPotter.png",
+  "trailer" : "http://i50.photobucket.com/albums/f313/P0is0n0us/HarryPotter.png",
+  "price" : "15",
+  "lat" : "0",
+  "lng" : "0",
+  "actors" : [{
+	"name" : "Daniel Radcliffe",
+	"picture" : "http://i977.photobucket.com/albums/ae252/sandrixbella/harry-potter.jpg"
+  },
+	{
+	  "name" : "Rupert Grint",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Rupert_Grint_2012.jpg/440px-Rupert_Grint_2012.jpg"
+	},
+	{
+	  "name" : "Emma Watson",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Emma_Watson_2013.jpg/440px-Emma_Watson_2013.jpg"
+	}]
+},{
+  "name" : "The Godfather",
+  "director" : "Francis Ford Coppola",
+  "releaseDate" : "1972-8-11",
+  "genre" : "Action",
+  "picture" : "http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX214_AL_.jpg",
+  "trailer" : "http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX214_AL_.jpg",
+  "price" : "10",
+  "lat" : "0",
+  "lng" : "0",
+  "actors" : [{
+	"name" : "Marlon Brandon",
+	"picture" : "http://ia.media-imdb.com/images/M/MV5BMTg3MDYyMDE5OF5BMl5BanBnXkFtZTcwNjgyNTEzNA@@._V1_SY317_CR97,0,214,317_AL_.jpg"
+  },
+	{
+	  "name" : "Al Pacino",
+	  "picture" : "http://ia.media-imdb.com/images/M/MV5BMTQzMzg1ODAyNl5BMl5BanBnXkFtZTYwMjAxODQ1._V1_SX214_CR0,0,214,317_AL_.jpg"
+	}]
+},{
+  "name" : "Star Wars",
+  "director" : "George Lucas",
+  "releaseDate" : "1977-5-25",
+  "genre" : "Science",
+  "picture" : "http://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg",
+  "trailer" : "http://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg",
+  "price" : "35",
+  "lat" : "0",
+  "lng" : "0",
+  "actors" : [{
+	"name" : "Mark Hamill",
+	"picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mark_Hamill_2010.jpg/440px-Mark_Hamill_2010.jpg"
+  },
+	{
+	  "name" : "Harrison Ford",
+	  "picture" : "http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Harrison_Fords_Jules_Verne_Award_%28cropped%29.JPG/440px-Harrison_Fords_Jules_Verne_Award_%28cropped%29.JPG"
+	}]
+}]

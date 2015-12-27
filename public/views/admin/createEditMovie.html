@@ -1,0 +1,95 @@
+<section data-ng-controller="CreateEditMovieCtrl" data-ng-init="findOne()">
+<div class="container">
+    <h1>Movie</h1>
+    <hr>
+    <div class="row">
+            <!-- left column -->
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img ng-src="{{movie.picsrc}}" class="avatar img-circle small-img">
+                    <h6>Picture URL</h6>
+
+                    <input ng-model="movie.picture" id="Picture" class="form-control" type="text" value="">
+                </div>
+            </div>
+
+            <!-- edit form column -->
+            <div class="col-md-9 personal-info">
+
+                <h3>Info</h3>
+
+
+                <input type="hidden" id="Id" value="{{movie._id}}" />
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Name</label>
+                    <div class="col-lg-8">
+                        <input ng-model="movie.name" id="Name" class="form-control" type="text" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Director</label>
+                    <div class="col-lg-8">
+                        <input ng-model="movie.director" id="Director" class="form-control" type="text" value="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">ReleaseDate</label>
+                    <div class="col-lg-8">
+                        <input id="ReleaseDate" class="form-control" type="text" ng-model="movie.releaseDate" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Genre</label>
+                    <div class="col-lg-8">
+                        <div class="ui-select">
+                            <select id="Genre" class="form-control" ng-model="movie.genre">
+                                <option value="Drama">Drama</option>
+                                <option value="Action">Action</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Crime">Crime</option>
+                                <option value="Science Fiction">Science Fiction</option>
+                                <option value="Animation">Animation</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Price</label>
+                    <div class="col-lg-8">
+                        <input id="Price" class="form-control" type="text" ng-model="movie.price" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" >Place</label>
+                    <div class="col-lg-8">
+                        <input type="text" id="Autocomplete" class="form-control" ng-autocomplete ng-autocomplete ng-model="autocomplete" details="autocompleteDetails" options="autocompleteOptions"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" >Actors</label>
+                    <div class="col-lg-8">
+                        <hr>
+                        <div data-ng-repeat="actor in movie.actors">
+                            <img ng-src="{{actor.picture}}" style="height:50px; width:80px" class="col-lg-2 avatar img-circle small-img">
+                            <div class="">
+                                <label class="">{{actor.name}}</label>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label"></label>
+                    <div class="col-md-8">
+                        <button ng-click="save()" type="button" class="btn btn-primary">Save</button>
+                        <span></span>
+                        <button type="reset" ng-click="back()" class="btn btn-default">Cancel</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<hr>
+</section>

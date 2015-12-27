@@ -1,0 +1,18 @@
+<input type="button" ui-sref="admin.movies.create" class="btn btn-primary navbar-left" style="margin-top:-50px" value="Create">
+
+<section data-ng-init="findMovies()">
+<div data-ng-repeat="movie in movies" class='col-md-2 col-sm-2'>
+    <div class='thumbnail'>
+        <img alt='300x200' class="img-rounded small-img" ng-src="{{movie.picture}}" >
+        <div class='caption'>
+            <h4 class='small title'><a ui-sref="admin.movies.edit({movieId:movie._id})">{{movie.name}}</a></h4>
+            <ul class='list-unstyled'>
+                <li>
+                    <span class="small"><strong>Genre:</strong> {{movie.genre}} </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<h3 style='text-align:center' data-ng-hide="!movies || movies.length">NO RESULTS.</h3>
+</section>

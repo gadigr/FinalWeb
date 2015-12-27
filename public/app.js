@@ -1,0 +1,19 @@
+angular.module('blockbusterApp',
+    [
+        'ngResource',
+        'ngSanitize',
+        'ngCookies',
+        'ui.router',
+        'ui.bootstrap',
+        'HomeCtrl',
+        'MovieCtrl',
+        'AdminCtrl',
+        'HomeService',
+        'MoviesService',
+        'AdminService',
+        'ChatService',
+        'OrdersService',
+        'uiRouterApp',
+        'btford.socket-io'
+    ]
+).value('nickName', 'anonymous');
